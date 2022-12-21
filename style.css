@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Anonymous Pro', sans-serif;
+    background-color: #111111;
+    color: #fff;
+    font-size: 24px
+}
+
+#task-input {
+    width: 60%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 10%;
+}
+
+#task-list {
+    width: 60%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 5%;
+}
+
+#task-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#clear-all {
+    font-family: 'Anonymous Pro',sans-serif;
+    color: #fff;
+    font-size: 0.8em;
+    transition: 0.5s ease-in;
+}
+
+#clear-all:hover {
+    cursor: pointer;
+    color: #1DB096;
+}
+
+#taskbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+legend {
+    font-family: 'playfair display', serif;
+    font-size: 2em;
+    font-weight: 400;
+    padding-bottom: 4%;
+}
+
+input, button {
+    background: none;
+    outline: none;
+    appearance: none;
+    border: none;
+}
+
+#text-box {
+    color: #fff;
+    font-size: 0.8em;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    padding: 10px 20px 10px;
+    font-family: 'Anonymous Pro', sans-serif;
+    width: 85%;
+    resize: horizontal;
+}
+
+#text-box:active {
+    width: 85%;
+}
+
+#text-box:focus {
+    min-width: 200px;
+}
+
+#text-box::placeholder {
+    font-family: 'Anonymous Pro',sans-serif;
+
+}
+
+#submit-button {
+    color: #fff;
+    font-family: 'Anonymous Pro', sans-serif;
+    font-size: 0.8em;
+    transition: 0.5s ease;
+}
+
+#submit-button:hover {
+    cursor: pointer;
+    color: #1DB096;
+}
+
+h1 {
+    font-family: 'playfair display', serif;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+#the-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.listItem {
+    margin-bottom: 10px;
+    transition: 0.5s ease-in-out;
+}
+
+.listItem:hover {
+    cursor: pointer;
+    color: gray;
+}
+
+.listItem:focus {
+    text-decoration:line-through;
+    color: gray;
+}

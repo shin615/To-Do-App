@@ -5,14 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>TO DO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Elegent To Do List</title>
 </head>
 <body>
-    <form>
-        <legend>Let's Do This!</legend>
-        <input type="text" id="new-task" placeholder="What do you want to do?">
-        <input type="submit" value="Add Task">
-    </form>
-    <script src="app.js" charset="utf-8"></script>
+    <div id="task-input">
+        <form id="todo">
+            <legend>What do you want to accomplish today?</legend>
+            <div id="taskbar">
+                <input type="text" id="text-box" placeholder="Finish my new app">
+                <input type="submit" id="submit-button" value="Add Task">
+            </div>
+        </form>
+    </div>
+    <div id="task-list">
+        <div id="task-list-header">
+            <h1>What's left to accomplish</h1>
+            <button id="clear-all">Clear List</button>
+        </div>
+        <ul id="the-list">
+            
+        </ul>
+    </div>
+    <script defer src="app.js" charset="utf-8"></script>
 </body>
 </html>
